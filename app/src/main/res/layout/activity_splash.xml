@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagelogo"
+        android:src="@drawable/logo"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_waves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waves of Food"
+        android:layout_marginTop="32dp"
+        android:textSize="40sp"
+        android:fontFamily="@font/yeon_sung"
+        app:layout_constraintEnd_toEndOf="@+id/imagelogo"
+        app:layout_constraintStart_toStartOf="@+id/imagelogo"
+        app:layout_constraintTop_toBottomOf="@+id/imagelogo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Dashboard"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:fontFamily="@font/lato_bold"
+        app:layout_constraintEnd_toEndOf="@+id/txt_waves"
+        app:layout_constraintStart_toStartOf="@+id/txt_waves"
+        app:layout_constraintTop_toBottomOf="@+id/txt_waves" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
